@@ -3,10 +3,38 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blog Pages</title>
     <link rel="stylesheet" href="./assets/main.css" />
-    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Metal+Mania&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <script href="./assets/script.js" rel="js file"></script>
+    <header>
+      <h1>Blog Pages</h1>
+      <div class="header-buttons">
+        <button onclick="goBack()">Back</button>
+        <label class="switch">
+          <input type="checkbox" id="modeToggle" onclick="toggleMode()" />
+          <span class="slider round"></span>
+        </label>
+      </div>
+    </header>
+    <div class="content" id="blogContent">
+      <!-- Blog entries will be appended here -->
+    </div>
+    <footer class="footer-text">
+      <p>
+        <a href="https://b1llybagz.github.io/B1LLY-INTRO-WEBPAGE-02/"
+          >&copy;B1LLYBAGZ</a
+        >
+      </p>
+      <!--//LINK TO BRING YOU BACK TO MY WEBSITE!-->
+    </footer>
+    <script src="./assets/script.js"></script>
+    <script src="./assets/scriptbac.js"></script>
   </body>
 </html>

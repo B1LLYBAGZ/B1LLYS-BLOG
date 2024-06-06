@@ -1,0 +1,199 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Metal Mania", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  transition: background-color 0.5s, color 0.5s;
+}
+
+.container {
+  display: flex;
+  height: 100vh;
+}
+
+.image-side,
+.form-side {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image-side img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: cover;
+}
+
+.form-side {
+  background-color: #f4f4f4;
+  padding: 20px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+}
+
+.blog-post {
+  border: rgb(0, 0, 0) solid 2px;
+  box-shadow: #606060 0px 5px 15px;
+  border-radius: 5px;
+  margin: 5px;
+  padding: 5px;
+}
+
+label {
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+input[type="text"],
+textarea {
+  margin-bottom: 15px;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button {
+  padding: 10px;
+  margin: 10px;
+  font-size: 16px;
+  color: #fff;
+  background-color: #000000;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #434343;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #f4f4f4;
+}
+
+.header-buttons {
+  display: flex;
+  align-items: center;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  transition: 0.4s;
+  border-radius: 34px;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  transition: 0.4s;
+  border-radius: 50%;
+}
+
+footer {
+  font-weight: 300;
+  font-size: 30px;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 2rem;
+  background: black;
+  border-top: 4px solid black;
+  color: #44ff00;
+  flex-wrap: wrap;
+}
+
+footer i {
+  vertical-align: middle;
+}
+
+footer a {
+  color: #ffffff;
+}
+
+input:checked + .slider {
+  background-color: #44ff00;
+}
+
+input:checked + .slider:before {
+  transform: translateX(26px);
+}
+
+.content {
+  padding: 20px;
+}
+
+.dark-mode {
+  background-color: #333;
+  color: #44ff00;
+}
+
+.dark-mode header {
+  background-color: #444;
+}
+
+.dark-mode button {
+  background-color: #444;
+  color: #ffffff;
+}
+
+.dark-mode button:hover {
+  background-color: #666;
+}
+
+.dark-mode .slider {
+  background-color: #888;
+}
+
+.dark-mode .userinpuit {
+  color: #44ff00;
+}
+
+.dark-mode .blog-post {
+  border: #44ff00 solid 2px;
+  box-shadow: #44ff00 0px 5px 15px;
+}
+
+.dark-mode footer a {
+  color: #44ff00;
+}
+.dark-mode .form-side {
+  background-color: #555555;
+}

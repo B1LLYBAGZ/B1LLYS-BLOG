@@ -3,10 +3,48 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home Page</title>
     <link rel="stylesheet" href="./assets/main.css" />
-    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Metal+Mania&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <script href="./assets/script.js" rel="js file"></script>
+    <header>
+      <h1>Home Pages</h1>
+      <div class="header-buttons">
+        <label class="switch">
+          <input type="checkbox" id="modeToggle" onclick="toggleMode()" />
+          <span class="slider round"></span>
+        </label>
+      </div>
+    </header>
+    <div class="container">
+      <div class="image-side">
+        <img
+          src="./assets/360_F_302442381_57f2bDbdDMKYUO2PzNcyihbqrCAy1Ljx-fotor-bg-remover-20240605224325.png"
+          alt="world image"
+        />
+      </div>
+      <div class="form-side">
+        <form id="blogForm">
+          <label for="username" ßclass="userinpuit">User Name:</label>
+          <input type="text" id="username" name="username" required />
+
+          <label for="title" class="userinpuit">Title:</label>
+          <input type="text" id="title" name="title" required />
+
+          <label for="content" class="userinpuit">Blog Content:</label>
+          <textarea id="content" name="content" rows="10" required></textarea>
+
+          <button type="submit">Submit</button>
+        </form>
+      </div>
+    </div>
+    <script src="./assets/script.js"></script>
+    <script src="./assets/scriptfront.js"></script>
   </body>
 </html>
