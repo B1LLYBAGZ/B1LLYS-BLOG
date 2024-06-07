@@ -31,12 +31,6 @@ function toggleMode() {
     localStorage.setItem("theme", "light");
   }
 }
-// // Check for saved theme in local storage
-// window.onload = () => {
-//   const theme = localStorage.getItem("theme");
-//   const toggle = document.getElementById("modeToggle");
-//   if (theme === "dark") {
-//     document.body.classList.add("dark-mode");
-//     toggle.checked = true;
-//   }
-// };
+
+// blogPosts.push(blogPost);
+// localStorage.setItem("blogPosts", JSON.stringify(blogPosts));

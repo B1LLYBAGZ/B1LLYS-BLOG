@@ -24,3 +24,19 @@ function toggleMode() {
     localStorage.setItem("theme", "light");
   }
 }
+// Retrieve theme preference from local storage
+function setInitialTheme() {
+  const theme = localStorage.getItem("theme");
+  const body = document.body;
+
+  if (theme === "dark") {
+    body.classList.add("dark-mode");
+    document.getElementById("modeToggle").checked = true;
+  } else {
+    body.classList.remove("dark-mode");
+    document.getElementById("modeToggle").checked = false;
+  }
+}
+
+// Call setInitialTheme when the page loads
+window.addEventListener("load", setInitialTheme);

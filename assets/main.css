@@ -3,14 +3,14 @@
   padding: 0;
   box-sizing: border-box;
 }
-
+/* setting default settings for my page */
 body {
   font-family: "Metal Mania", system-ui;
   font-weight: 400;
   font-style: normal;
   transition: background-color 0.5s, color 0.5s;
 }
-
+/* body font i wanted the whole page to take on */
 .container {
   display: flex;
   height: 100vh;
