@@ -12,7 +12,7 @@
       rel="stylesheet"
     />
   </head>
-  <body>
+  <!-- Header section holding the toggle switch as well as the title of the page-->
     <header>
       <h1>Home Page</h1>
       <div class="header-buttons">
@@ -22,6 +22,7 @@
         </label>
       </div>
     </header>
+    <!-- image section of the page which is just a transperant photo that i edited-->
     <div class="container">
       <div class="image-side">
         <img
@@ -30,16 +31,17 @@
         />
       </div>
       <div class="form-side">
+        <!-- form half of the page just containg basic input elements for each input then a textarea for the actual content-->
         <form id="blogForm">
           <label for="username" class="userinpuit">User Name:</label>
           <input type="text" id="username" name="username" required />
-
+<!-- username section -->
           <label for="title" class="userinpuit">Title:</label>
           <input type="text" id="title" name="title" required />
-
+<!-- title section -->
           <label for="content" class="userinpuit">Blog Content:</label>
           <textarea id="content" name="content" rows="10" required></textarea>
-
+<!-- userinput section -->
           <button type="submit">Submit</button>
         </form>
       </div>

@@ -10,12 +10,13 @@ body {
   font-style: normal;
   transition: background-color 0.5s, color 0.5s;
 }
-/* body font i wanted the whole page to take on */
+/* body font i wanted the whole page to take on was this metal font i found on google*/
 .container {
   display: flex;
   height: 100vh;
 }
 
+/* this section targets the picture on the home page as well as the form side by aligning the item next to each other */
 .image-side,
 .form-side {
   flex: 1;
@@ -23,13 +24,14 @@ body {
   justify-content: center;
   align-items: center;
 }
-
+/* this is just saying how big i want my image 100%*/
 .image-side img {
   max-width: 100%;
   max-height: 100%;
   object-fit: cover;
 }
 
+/* this section targets the form side of the page */
 .form-side {
   background-color: #f4f4f4;
   padding: 20px;
@@ -40,7 +42,8 @@ form {
   flex-direction: column;
   width: 80%;
 }
-
+/* this is the blog post that we made setting a border
+box shadow and radius as well as margin and padding */
 .blog-post {
   border: rgb(0, 0, 0) solid 2px;
   box-shadow: #606060 0px 5px 15px;
@@ -53,7 +56,7 @@ label {
   margin-bottom: 5px;
   font-weight: bold;
 }
-
+/* this is out input section */
 input[type="text"],
 textarea {
   margin-bottom: 15px;
@@ -62,7 +65,7 @@ textarea {
   border: 1px solid #ccc;
   border-radius: 4px;
 }
-
+/* this is the submit button */
 button {
   padding: 10px;
   margin: 10px;
@@ -77,7 +80,7 @@ button {
 button:hover {
   background-color: #434343;
 }
-
+/* this section is the header for both pages as well as the switch */
 header {
   display: flex;
   justify-content: space-between;
@@ -90,7 +93,7 @@ header {
   display: flex;
   align-items: center;
 }
-
+/* this is all the toggle switch */
 .switch {
   position: relative;
   display: inline-block;
@@ -127,7 +130,7 @@ header {
   transition: 0.4s;
   border-radius: 50%;
 }
-
+/* this section is for my footer on the blog page */
 footer {
   font-weight: 300;
   font-size: 30px;
@@ -139,7 +142,7 @@ footer {
   color: #44ff00;
   flex-wrap: wrap;
 }
-
+/* this is centering the footer */
 footer i {
   vertical-align: middle;
 }
@@ -147,19 +150,19 @@ footer i {
 footer a {
   color: #ffffff;
 }
-
+/* this it the checked color of the slider */
 input:checked + .slider {
   background-color: #44ff00;
 }
-
+/* this is the shift action of the slider */
 input:checked + .slider:before {
   transform: translateX(26px);
 }
-
+/* this is extrea padding for content */
 .content {
   padding: 20px;
 }
-
+/* this is the dark mode theam colors */
 .dark-mode {
   background-color: #333;
   color: #44ff00;
@@ -173,7 +176,7 @@ input:checked + .slider:before {
   background-color: #444;
   color: #ffffff;
 }
-
+/* submit button hover background color change */
 .dark-mode button:hover {
   background-color: #666;
 }
@@ -185,12 +188,13 @@ input:checked + .slider:before {
 .dark-mode .userinpuit {
   color: #44ff00;
 }
-
+/* this is my faviorte part of the whole website 
+the blog enteries in darkmode*/
 .dark-mode .blog-post {
   border: #44ff00 solid 2px;
   box-shadow: #44ff00 0px 5px 15px;
 }
-
+/* just the footer text and the next selector is the form */
 .dark-mode footer a {
   color: #44ff00;
 }

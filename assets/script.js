@@ -1,7 +1,7 @@
 function goBack() {
   window.history.back();
 }
-
+// function casuses the browser to "go back" one page in the session hystory
 function toggleMode(event) {
   event.preventDefault();
   const body = document.body;
@@ -13,7 +13,8 @@ function toggleMode(event) {
     localStorage.setItem("theme", "light");
   }
 }
-
+// simple function for light and dark toggle
+// the choice to add the toggle mode to the
 // Check for saved theme in local storage
 window.onload = () => {
   const theme = localStorage.getItem("theme");

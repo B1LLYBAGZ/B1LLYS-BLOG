@@ -1,7 +1,7 @@
 window.onload = function () {
   const blogContent = document.getElementById("blogContent");
   const blogPosts = JSON.parse(localStorage.getItem("blogPosts")) || [];
-
+  // unstringify as i like to call it is to read the data read the item as string then convert to JSON object
   blogPosts.forEach((post) => {
     const postDiv = document.createElement("div");
     postDiv.classList.add("blog-post");
@@ -13,7 +13,9 @@ window.onload = function () {
         `;
     blogContent.appendChild(postDiv);
   });
+  // this is our posted entrys going inside a div inside that div theres your h2 h3 and p as well as hr elemnets but there really not elements there objects.
 };
+// again this is the toggle button so each individual page has the option to chose between light and dark and store that to local storage
 function toggleMode() {
   const body = document.body;
   const toggle = document.getElementById("modeToggle");
@@ -24,19 +26,3 @@ function toggleMode() {
     localStorage.setItem("theme", "light");
   }
 }
-// Retrieve theme preference from local storage
-function setInitialTheme() {
-  const theme = localStorage.getItem("theme");
-  const body = document.body;
-
-  if (theme === "dark") {
-    body.classList.add("dark-mode");
-    document.getElementById("modeToggle").checked = true;
-  } else {
-    body.classList.remove("dark-mode");
-    document.getElementById("modeToggle").checked = false;
-  }
-}
-
-// Call setInitialTheme when the page loads
-window.addEventListener("load", setInitialTheme);
