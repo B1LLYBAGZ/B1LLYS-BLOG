@@ -1,0 +1,41 @@
+/* this section targets the picture on the home page as well as the form side by aligning the item next to each other */
+.image-side,
+.form-side {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* this is just saying how big i want my image 100%*/
+.image-side img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: cover;
+}
+
+/* this section targets the form side of the page */
+.form-side {
+  background-color: #f4f4f4;
+  padding: 20px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+}
+/* this is the submit button */
+button {
+  padding: 10px;
+  margin: 10px;
+  font-size: 16px;
+  color: #fff;
+  background-color: #000000;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.dark-mode .form-side {
+  background-color: #555555;
+}

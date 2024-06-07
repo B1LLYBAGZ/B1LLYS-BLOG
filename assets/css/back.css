@@ -1,0 +1,24 @@
+/* this section is for my footer on the blog page */
+footer {
+  font-weight: 300;
+  font-size: 30px;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 2rem;
+  background: black;
+  border-top: 4px solid black;
+  color: #44ff00;
+  flex-wrap: wrap;
+}
+/* this is centering the footer */
+footer i {
+  vertical-align: middle;
+}
+
+footer a {
+  color: #ffffff;
+}
+/* just the footer text when dark */
+.dark-mode footer a {
+  color: #44ff00;
+}

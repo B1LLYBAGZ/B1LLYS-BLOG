@@ -15,33 +15,18 @@ body {
   display: flex;
   height: 100vh;
 }
-
-/* this section targets the picture on the home page as well as the form side by aligning the item next to each other */
-.image-side,
-.form-side {
-  flex: 1;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-/* this is just saying how big i want my image 100%*/
-.image-side img {
-  max-width: 100%;
-  max-height: 100%;
-  object-fit: cover;
+/* this is the buttons */
+button {
+  padding: 10px;
+  margin: 10px;
+  font-size: 16px;
+  color: #fff;
+  background-color: #000000;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
 }
 
-/* this section targets the form side of the page */
-.form-side {
-  background-color: #f4f4f4;
-  padding: 20px;
-}
-
-form {
-  display: flex;
-  flex-direction: column;
-  width: 80%;
-}
 /* this is the blog post that we made setting a border
 box shadow and radius as well as margin and padding */
 .blog-post {
@@ -65,21 +50,7 @@ textarea {
   border: 1px solid #ccc;
   border-radius: 4px;
 }
-/* this is the submit button */
-button {
-  padding: 10px;
-  margin: 10px;
-  font-size: 16px;
-  color: #fff;
-  background-color: #000000;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-}
 
-button:hover {
-  background-color: #434343;
-}
 /* this section is the header for both pages as well as the switch */
 header {
   display: flex;
@@ -130,26 +101,6 @@ header {
   transition: 0.4s;
   border-radius: 50%;
 }
-/* this section is for my footer on the blog page */
-footer {
-  font-weight: 300;
-  font-size: 30px;
-  display: flex;
-  justify-content: space-evenly;
-  padding: 2rem;
-  background: black;
-  border-top: 4px solid black;
-  color: #44ff00;
-  flex-wrap: wrap;
-}
-/* this is centering the footer */
-footer i {
-  vertical-align: middle;
-}
-
-footer a {
-  color: #ffffff;
-}
 /* this it the checked color of the slider */
 input:checked + .slider {
   background-color: #44ff00;
@@ -194,10 +145,6 @@ the blog enteries in darkmode*/
   border: #44ff00 solid 2px;
   box-shadow: #44ff00 0px 5px 15px;
 }
-/* just the footer text and the next selector is the form */
-.dark-mode footer a {
-  color: #44ff00;
-}
-.dark-mode .form-side {
-  background-color: #555555;
+button:hover {
+  background-color: #434343;
 }

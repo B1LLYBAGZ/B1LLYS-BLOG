@@ -19,7 +19,7 @@ document
     localStorage.setItem("blogPosts", JSON.stringify(blogPosts));
     window.location.href = "blog.html";
   });
-// this is the toggle switch so every page has its own switch
+// this is the toggle switch for the home page so every page has its own switch
 function toggleMode() {
   const body = document.body;
   const toggle = document.getElementById("modeToggle");
